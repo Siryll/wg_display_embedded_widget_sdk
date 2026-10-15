@@ -1,0 +1,10 @@
+[package]
+name = "wg-display-widget"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "WIT interface and guest bindings for WG Display widgets"
+include = ["src", "wg_display_widget_wit/wit", "LICENSE", "README.md"]
+
+[dependencies]
+wit-bindgen = { version = "0.53.1", default-features = false, features = ["macros", "realloc"] }
